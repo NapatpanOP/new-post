@@ -2,63 +2,15 @@
   "posts": [
     {
       "title": "test1",
-      "message": "smxdkxs",
-      "time": "2023-09-27 06:28",
+      "message": "ddddsss",
+      "date": "2023-09-27 16:53",
       "id": 1
     },
     {
       "title": "test2",
-      "message": "sskds",
-      "time": "2023-09-27 06:31",
+      "message": "fkvmkdpe",
+      "date": "2023-09-27 16:54",
       "id": 2
-    },
-    {
-      "title": "test3",
-      "message": "dkfcls",
-      "time": "2023-09-27 06:37",
-      "id": 3
-    },
-    {
-      "title": "test4",
-      "message": "ccldss",
-      "time": "2023-09-27 06:53",
-      "id": 4
-    },
-    {
-      "title": "test5",
-      "message": "ckdlmvpnipndlnnd",
-      "time": "2023-09-27 08:09",
-      "id": 5
-    },
-    {
-      "title": "test8",
-      "message": "cl;m;m;",
-      "time": "2023-09-27 08:37",
-      "id": 6
-    },
-    {
-      "title": "gdd",
-      "message": "xxx",
-      "time": "2023-09-27 08:40",
-      "id": 7
-    },
-    {
-      "title": "fdkkd",
-      "message": "lmlnnsnvd",
-      "time": "2023-09-27 15:56",
-      "id": 8
-    },
-    {
-      "title": "now",
-      "message": "dklnnpnpnve",
-      "time": "2023-8-function getDate() { [native code] } 16:3",
-      "id": 9
-    },
-    {
-      "title": "now1",
-      "message": "dlmnm;",
-      "time": "2023-8-27 16:3",
-      "id": 10
     }
   ]
 }
