@@ -2,7 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const postId = urlParams.get('id');
 
-  fetch(`http://localhost:3000/posts/${postId}`)
+  const config = {
+    headers: {
+      'Accept': 'application/json',
+    },
+  }
+
+  fetch(`http://localhost:3000/posts/${postId}`, config)
       .then(response => response.json())
       .then(data => {
         document.getElementById('title').value = data.title;
@@ -30,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: JSON.stringify({ title, message, date })
     })
-
     window.location.href = "./index.html";
   })
 })

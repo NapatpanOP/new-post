@@ -26,8 +26,9 @@ function boardPosts() {
               <div class="font-light text-sm mb-2 text-gray-500">${post.date}</div>
               <div class="font-light">${post.message}</div>
             </div>
-            <div>
+            <div class="flex gap-4">
               <a href="./edit-post.html?id=${post.id}" id="edit-post" class="font-light text-xs text-gray-400 underline hover:text-gray-500">Edit</a>
+              <button id="delete" class="font-light text-xs text-gray-400 bg-transparent h-fit underline hover:text-gray-500">Delete</button>
             </div>
           </div>
         </div>`
