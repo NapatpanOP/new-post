@@ -12,13 +12,15 @@ function boardPosts() {
   fetch('http://localhost:3000/posts', config)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(datas);
-      data.forEach(post => {
+      // console.log(data);
+      data.sort((a, b) => b.date.localeCompare(a.date));
+      
+      data.forEach((post, index) => {
         // console.log(data);
         newPosts.innerHTML += `
         <div class="flex gap-12 mt-8">
           <div class="font-light">
-            ${post.id}
+            ${index + 1}
           </div>
           <div class="flex content-between gap-8 max-w-5xl w-full">
             <div class="w-full">
@@ -28,11 +30,20 @@ function boardPosts() {
             </div>
             <div class="flex gap-4">
               <a href="./edit-post.html?id=${post.id}" id="edit-post" class="font-light text-xs text-gray-400 underline hover:text-gray-500">Edit</a>
-              <button id="delete" class="font-light text-xs text-gray-400 bg-transparent h-fit underline hover:text-gray-500">Delete</button>
+              <button id="deleteBtn" class="font-light text-xs text-gray-400 bg-transparent h-fit underline hover:text-gray-500" type="button" onclick="btnDelete(event)" data-id="${post.id}">Delete</button>
             </div>
           </div>
         </div>`
       });
     })
+}
 
+function btnDelete(event) {
+  const postId = event.target.dataset.id;
+  
+  if (btnDelete) {
+    fetch(`http://localhost:3000/posts/${postId}`, {
+      method: 'DELETE'
+    })
+  }
 }
