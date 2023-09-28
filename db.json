@@ -1,52 +1,16 @@
 {
   "posts": [
     {
-      "title": "test001rrr",
-      "message": "dfdddds00wlshhg54",
-      "date": "2023-09-28 14:40",
-      "id": 1
-    },
-    {
-      "title": "test02",
-      "message": "fkvmkdpemmxx",
-      "date": "2023-09-27 22:18",
+      "title": "test2",
+      "message": "fgreg",
+      "date": "2023-09-28 17:05",
       "id": 2
     },
     {
-      "title": "test3",
-      "message": "cfksmcs",
-      "date": "2023-09-27 16:56",
+      "title": "testtest",
+      "message": "dlfmr2",
+      "date": "2023-09-28 19:26",
       "id": 3
-    },
-    {
-      "title": "test04",
-      "message": "fbgbdfdcdvf",
-      "date": "2023-09-27 22:27",
-      "id": 4
-    },
-    {
-      "title": "test5",
-      "message": "gukcmjd",
-      "date": "2023-09-27 22:43",
-      "id": 5
-    },
-    {
-      "title": "67h53",
-      "message": "hlloofgg",
-      "date": "2023-09-28 14:40",
-      "id": 6
-    },
-    {
-      "title": "hello555",
-      "message": "vkfcmdm;fm",
-      "date": "2023-09-28 14:44",
-      "id": 7
-    },
-    {
-      "title": "test08",
-      "message": "fkfe",
-      "date": "2023-09-28 14:52",
-      "id": 8
     }
   ]
 }
