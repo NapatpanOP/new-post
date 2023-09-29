@@ -25,7 +25,10 @@ function showAllPosts() {
           <div class="flex content-between gap-8 max-w-5xl w-full">
             <div class="w-full">
               <h3 class="font-semibold text-gray-600">${post.title}</h3>
-              <div class="font-light text-sm mb-2 text-gray-500">${post.date}</div>
+              <div class="flex gap-4">
+                <div class="font-light text-sm mb-2 text-gray-500">By <span class="font-medium text-gray-500">${post.personName}</span></div>
+                <div class="font-light text-sm mb-2 text-gray-500">${post.date}</div>
+              </div>
               <div class="font-light">${post.message}</div>
             </div>
             <div class="flex gap-4 relative">
@@ -48,8 +51,8 @@ function showAllPosts() {
 
           if(confirmDelete) {
             fetch(`http://localhost:3000/posts/${postId}`, {
-            method: 'DELETE'
-          })
+              method: 'DELETE'
+            })
           }
 
           window.location.reload()
