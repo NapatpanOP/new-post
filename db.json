@@ -1,51 +1,16 @@
 {
-  "persons": [
-    {
-      "id": 1,
-      "name": "Jisoo"
-    },
-    {
-      "id": 2,
-      "name": "Jennie"
-    },
-    {
-      "id": 3,
-      "name": "Lisa"
-    },
-    {
-      "id": 4,
-      "name": "Rose"
-    },
-    {
-      "id": 5,
-      "name": "Opor"
-    },
-    {
-      "id": 6,
-      "name": "miw"
-    }
-  ],
   "posts": [
     {
-      "title": "test1",
-      "message": "fmcjde",
-      "date": "2023-09-28 21:04",
-      "personName": "Jisoo",
-      "id": 1
+      "title": "test2",
+      "message": "fgreg",
+      "date": "2023-09-28 17:05",
+      "id": 2
     },
     {
-      "title": "test3",
-      "message": "fkokove",
-      "date": "2023-09-28 21:14",
-      "personName": "Lisa",
+      "title": "testtest",
+      "message": "dlfmr2",
+      "date": "2023-09-28 19:26",
       "id": 3
-    },
-    {
-      "title": "grff",
-      "message": "tgrg",
-      "date": "2023-09-29 10:12",
-      "personName": "Opor",
-      "id": 4
     }
   ]
 }
