@@ -1,11 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const postId = urlParams.get('id');
+  const personSelect = document.getElementById('personSelect');
 
   const config = {
     headers: {
       'Accept': 'application/json',
     },
+  }
+
+  persons() 
+
+  function persons() {
+    fetch('http://localhost:3000/persons', config)
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(person => {
+          // console.log(person);
+          const option = document.createElement('option');
+          option.value = person.name;
+          option.textContent = person.name;
+          personSelect.appendChild(option);
+        });
+      });
   }
 
   fetch(`http://localhost:3000/posts/${postId}`, config)
@@ -29,12 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('date').value = date;
 
+    const personName= personSelect.value;
+
     fetch(`http://localhost:3000/posts/${postId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ title, message, date })
+        body: JSON.stringify({title, message, date, personName})
     })
     window.location.href = "./index.html";
   })
