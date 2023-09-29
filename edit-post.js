@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ title, message, date })
+        body: JSON.stringify({title, message, date})
     })
     window.location.href = "./index.html";
   })
