@@ -24,26 +24,25 @@ function showAllPosts() {
           </div>
           <div class="flex content-between gap-8 max-w-5xl w-full">
             <div class="w-full">
-              <h3 class="font-semibold text-gray-600">${post.title}</h3>
+              <a href="./topic.html?id=${post.id}" class="font-semibold text-gray-600 hover:underline">${post.title}</a>
               <div class="flex gap-4">
                 <div class="font-light text-sm mb-2 text-gray-500">By <span class="font-medium text-gray-500">${post.personName}</span></div>
                 <div class="font-light text-sm mb-2 text-gray-500">${post.date}</div>
               </div>
-              <div class="font-light">${post.message}</div>
+              <div class="font-light mb-4">${post.message}</div>
             </div>
             <div class="flex gap-4 relative">
               <button class="btn-delete relative font-light text-xs text-gray-400 bg-transparent h-fit underline hover:text-gray-500" type="button" data-id="${post.id}">Delete</button>
               <div class="after:absolute after:contents[''] after:w-[1px] after:h-4 after:bg-gray-400"></div>
-              <a href="./edit-post.html?id=${post.id}" id="edit-post" class="font-light text-xs text-gray-400 underline hover:text-gray-500">Edit</a>
+              <a href="./edit-post.html?id=${post.id}" class="font-light text-xs text-gray-400 underline h-fit hover:text-gray-500">Edit</a>
             </div>
           </div>
         </div>`
       });
 
-      let buttons = document.querySelectorAll('.btn-delete')
-
+      // Delete Function
+      let buttons = document.querySelectorAll('.btn-delete');
       // console.log(buttons);
-
       buttons.forEach(btn => {
         btn.addEventListener('click', (event) => {
           const postId = event.target.dataset.id;

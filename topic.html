@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Topic</title>
+</head>
+<body class="bg-gray-300">
+  <div class="bg-white rounded-xl max-w-6xl w-full shadow-md p-8 mx-auto my-0 mt-16">
+    <h1 id="title" class="text-2xl font-semibold text-gray-600">Topic</h1>
+    <div class="flex gap-4">
+      <div class="font-light mb-2 text-gray-500">By <span id="name" class="font-medium text-gray-500">name</span></div>
+      <div id="date" class="font-light mb-8 text-gray-500">Date</div>
+    </div>
+    <div id="message" class="font-light mb-8">message</div>
+
+    <div id="comment"></div>
+
+    <div class="grid gap-4 mb-4">
+      <label for="commentInput" class="text-gray-600 font-semibold">Comment</label>
+      <input type="text" name="commentInput" id="commentInput" class="max-w-xl w-full border border-gray-300 font-light rounded-md px-5 py-2" placeholder="Write a comment...">
+    </div>
+  </div>
+  <script src="./topic.js"></script>
+</body>
+</html>
