@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const comments = document.getElementById('comments');
   const commentInput = document.getElementById('commentInput');
 
+  console.log(postId);
+  
   const config = {
     headers: {
       'Accept': 'application/json',
@@ -23,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         message.innerHTML = data.message;
       });
 
-  fetch('http://localhost:3000/comments', config)
+    fetch(`http://localhost:3000/comments?postId=${postId}`, config)
     .then(response => response.json())
     .then(data => {
       data.forEach(comment => {
         comments.innerHTML += `
-        <div class="font-light mb-2">
-          ${comment.comment}
-        </div>`;
+          <div class="font-light mb-4">
+            ${comment.comment}
+          </div>`;
       });
     });
 
@@ -39,15 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const comment = commentInput.value;
 
       if (comment.trim() !== '') {
-        sendCommentToServer(comment);
+        sendCommentToServer(comment, postId);
         commentInput.value = '';
       }
     }
   });
 
-  function sendCommentToServer(comment) {
+  function sendCommentToServer(comment, postId) {
 
     const data = {
+      postId: postId,
       comment: comment,
     };
   

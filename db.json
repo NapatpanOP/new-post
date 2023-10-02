@@ -27,29 +27,60 @@
   ],
   "posts": [
     {
-      "title": "test0",
-      "message": "htekrrgked",
-      "date": "2023-09-29 12:07",
-      "personName": "Jisoo",
-      "dateFull": "2023-09-29T05:07:09.256Z",
+      "title": "test1",
+      "message": "frefe",
+      "date": "2023-10-02 18:37",
+      "personName": "Lisa",
+      "dateFull": "2023-10-02T11:37:51.038Z",
       "id": 1
     },
     {
       "title": "test2",
-      "message": "flfrge",
-      "date": "2023-09-29 12:06",
-      "personName": "Rose",
-      "dateFull": "2023-09-29T05:06:46.574Z",
+      "message": "ferfe",
+      "date": "2023-10-02 18:38",
+      "personName": "Jennie",
+      "dateFull": "2023-10-02T11:38:00.723Z",
+      "id": 2
+    },
+    {
+      "title": "test3",
+      "message": "vgrbrn",
+      "date": "2023-10-02 18:38",
+      "personName": "Lisa",
+      "dateFull": "2023-10-02T11:38:13.873Z",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "postId": "3",
+      "comment": "1",
+      "id": 1
+    },
+    {
+      "postId": "3",
+      "comment": "2",
+      "id": 2
+    },
+    {
+      "postId": "3",
+      "comment": "3",
       "id": 3
     },
     {
-      "title": "test4",
-      "message": "vldvflkfdv",
-      "date": "2023-10-02 10:21",
-      "personName": "Lisa",
-      "dateFull": "2023-10-02T03:21:43.658Z",
+      "postId": "2",
+      "comment": "1",
       "id": 4
+    },
+    {
+      "postId": "2",
+      "comment": "2",
+      "id": 5
+    },
+    {
+      "postId": "2",
+      "comment": "3",
+      "id": 6
     }
-  ],
-  "comments": []
+  ]
 }

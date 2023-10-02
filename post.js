@@ -30,7 +30,7 @@ formPost.addEventListener('submit', (event) => {
   const time = new Date().toString().slice(16, 21);
   const date = `${day} ${time}`
 
-  const dateFull = new Date().toISOString()
+  const dateFull = new Date().toISOString();
 
   document.getElementById('date').value = date;
 
