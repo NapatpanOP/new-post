@@ -13,7 +13,7 @@ function showAllPosts() {
     .then((response) => response.json())
     .then((data) => {
       // console.log(data);
-      data.sort((a, b) => b.date.localeCompare(a.date));
+      data.sort((a, b) => b.dateFull.localeCompare(a.dateFull));
 
       data.forEach((post, index) => {
         // console.log(data);

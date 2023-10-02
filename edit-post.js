@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const time = new Date().toString().slice(16, 21);
     const date = `${day} ${time}`
 
+    const dateFull = new Date().toISOString()
+
     document.getElementById('date').value = date;
 
     const personName= personSelect.value;
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({title, message, date, personName})
+        body: JSON.stringify({title, message, date, personName, dateFull})
     })
     window.location.href = "./index.html";
   })
