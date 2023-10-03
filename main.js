@@ -17,7 +17,19 @@ function showAllPosts() {
       data.sort((a, b) => new Date(b.dateFull) - new Date(a.dateFull));
 
       data.forEach((post, index) => {
-        // console.log(data);
+        // console.log(post, index);
+
+        fetch(`http://localhost:3000/comments?postId=${post.id}`, config)
+        .then(response => response.json())
+        .then(data => {
+          // console.log(data);
+          const commentCount = data.length;
+          // console.log(commentCount);
+          const commentCountElement = document.getElementById(`commentCountNumber_${post.id}`);
+          // console.log(commentCountElement);
+            commentCountElement.innerText = commentCount;
+        });
+
         boardPosts.innerHTML += `
         <div class="flex gap-12 mt-8">
           <div class="font-light">
@@ -25,7 +37,13 @@ function showAllPosts() {
           </div>
           <div class="flex content-between gap-8 max-w-5xl w-full">
             <div class="w-full">
-              <a href="./topic.html?id=${post.id}" class="font-semibold text-gray-600 hover:underline">${post.title}</a>
+              <div class="flex gap-4 items-center">
+                <a href="./topic.html?id=${post.id}" class="font-semibold text-gray-600 hover:underline">${post.title}</a>
+                <div class="flex gap-1 items-center">
+                  <i class="fa-regular fa-comment text-gray-400 text-sm"></i>
+                  <div id="commentCountNumber_${post.id}" class="font-light text-sm text-gray-400"></div>
+                </div>
+              </div>
               <div class="flex gap-4">
                 <div class="font-light text-sm mb-2 text-gray-500">By <span class="font-medium text-gray-500">${post.personName}</span></div>
                 <div class="font-light text-sm mb-2 text-gray-500">${post.date}</div>

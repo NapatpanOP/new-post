@@ -6,6 +6,7 @@ const date = document.getElementById('date');
 const message = document.getElementById('message');
 const comments = document.getElementById('comments');
 const commentInput = document.getElementById('commentInput');
+let commentCount = 0;
 
 // console.log(postId);
   
@@ -47,8 +48,6 @@ commentInput.addEventListener('keyup', (e) => {
     }
   }
 });
-
-let commentCount = 0;
 
 function sendComment(comment, postId) {
   const data = {

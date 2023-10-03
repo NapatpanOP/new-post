@@ -35,20 +35,20 @@
       "id": 1
     },
     {
-      "title": "test2",
-      "message": "ferfe",
-      "date": "2023-10-02 18:38",
-      "personName": "Jennie",
-      "dateFull": "2023-10-02T11:38:00.723Z",
-      "id": 2
-    },
-    {
       "title": "test03",
       "message": "vgrbrn",
       "date": "2023-10-02 18:48",
       "personName": "Jisoo",
       "dateFull": "2023-10-02T11:48:39.429Z",
       "id": 3
+    },
+    {
+      "title": "testts",
+      "message": "vlfmv;",
+      "date": "2023-10-03 15:20",
+      "personName": "Rose",
+      "dateFull": "2023-10-03T08:20:56.237Z",
+      "id": 4
     }
   ],
   "comments": [
@@ -69,18 +69,6 @@
       "comment": "a",
       "postId": "3",
       "id": 3
-    },
-    {
-      "commentCount": 1,
-      "comment": "t",
-      "postId": "2",
-      "id": 4
-    },
-    {
-      "commentCount": 2,
-      "comment": "y",
-      "postId": "2",
-      "id": 5
     },
     {
       "commentCount": 1,
