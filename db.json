@@ -53,64 +53,46 @@
   ],
   "comments": [
     {
+      "commentCount": 1,
+      "comment": "f",
       "postId": "3",
-      "comment": "1",
       "id": 1
     },
     {
+      "commentCount": 2,
+      "comment": "g",
       "postId": "3",
-      "comment": "2",
       "id": 2
     },
     {
+      "commentCount": 3,
+      "comment": "a",
       "postId": "3",
-      "comment": "3",
       "id": 3
     },
     {
+      "commentCount": 1,
+      "comment": "t",
       "postId": "2",
-      "comment": "1",
       "id": 4
     },
     {
+      "commentCount": 2,
+      "comment": "y",
       "postId": "2",
-      "comment": "2",
       "id": 5
     },
     {
-      "postId": "2",
-      "comment": "3",
+      "commentCount": 1,
+      "comment": "1",
+      "postId": "1",
       "id": 6
     },
     {
+      "commentCount": 2,
+      "comment": "r",
       "postId": "1",
-      "comment": "1",
       "id": 7
-    },
-    {
-      "postId": "3",
-      "comment": "4",
-      "id": 8
-    },
-    {
-      "postId": "2",
-      "comment": "4",
-      "id": 9
-    },
-    {
-      "postId": "1",
-      "comment": "2",
-      "id": 10
-    },
-    {
-      "postId": "3",
-      "comment": "cdc",
-      "id": 11
-    },
-    {
-      "postId": "3",
-      "comment": "    fgrg fgff",
-      "id": 12
     }
   ]
 }
