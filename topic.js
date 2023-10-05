@@ -29,7 +29,6 @@ fetch(`http://localhost:3000/comments?postId=${postId}`, config)
 .then(response => response.json())
 .then(data => {
   // console.log(data);
-  commentCount = data.length;
   data.forEach(comment => {
     comments.innerHTML += `
       <div class="font-light mb-4">
@@ -51,7 +50,7 @@ commentInput.addEventListener('keyup', (e) => {
 
 function sendComment(comment, postId) {
   const data = {
-    commentCount: commentCount + 1,
+    // commentCount: commentCount + 1,
     comment: comment,
     postId: postId
   };
@@ -63,6 +62,13 @@ function sendComment(comment, postId) {
     },
     body: JSON.stringify(data),
   })
+    .then(response => response.json())
+    .then(data => {
+      console.log('success', data);
+    })
+    .catch(error => {
+      console.error('Error', error);
+    });
 
   window.location.reload()
 }
